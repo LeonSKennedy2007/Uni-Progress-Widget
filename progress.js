@@ -47,7 +47,7 @@ async function syncProgress() {
         const label = getYearSemesterLabel();
 
         const dynamic = [
-            { type: 1, name: "progress_str", value: "University Progression" },
+            { type: 1, name: "progress_str", value: `University Progression - ${getTodayLabel()}` },
             { type: 2, name: "progress_bar", value: Math.round(percent * 100) / 10000 },
             { type: 1, name: "progress_txt", value: `${percent.toFixed(1)}%` },
             { type: 1, name: "progress_label", value: label }
