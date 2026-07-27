@@ -4,7 +4,7 @@ if (process.env.GITHUB_ACTIONS !== "true") {
 const axios = require('axios');
 
 // ตั้งวันเริ่มและระยะเวลารวม
-const START_DATE = new Date("2026-08-10T00:00:00Z");
+const START_DATE = new Date("2026-08-10T00:00:00+07:00");
 const TOTAL_YEARS = 4;
 const END_DATE = new Date(START_DATE);
 END_DATE.setFullYear(END_DATE.getFullYear() + TOTAL_YEARS);
