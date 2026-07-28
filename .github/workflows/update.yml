@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     # Once a day is plenty for something that moves over 4 years
-    - cron: "17 17 * * *"
+    - cron: "0 18 * * *"
 permissions:
   contents: read
 jobs:
